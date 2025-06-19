@@ -1,0 +1,12 @@
+a = int(input("enter num1: "))
+b = int(input("enter num2: "))
+c = int(input("enter num3: "))
+
+if (a > b and a < c) or (a > c and a < b):
+    second_largest = a
+elif (b > a and b < c) or (b > c and b < a):
+    second_largest = b
+else:
+    second_largest = c
+
+print("Second largest number is:", second_largest)
