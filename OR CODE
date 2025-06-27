@@ -1,0 +1,10 @@
+import qrcode
+data = "this is day 7 ----------->raju"
+r = qrcode.QRCode()
+
+r.add_data(data)
+r.make(fit=True)
+
+img = r.make_image(fill_color="black", back_color="white")
+img.save("harish.png")
+print("Image saved correctly as 'harish.png'")
